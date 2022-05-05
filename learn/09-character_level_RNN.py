@@ -57,7 +57,7 @@ def read_lines(filename):
     return [unicode_to_ascii(line) for line in lines]
 
 
-for filename in find_files('09-data/names/*.txt'):
+for filename in find_files('data/names/*.txt'):
     name = os.path.splitext(os.path.basename(filename))[0]
     # os.path.basename(filename)：xxx.txt
     # os.path.splitext(os.path.basename(filename)) :('xxx', '.txt')

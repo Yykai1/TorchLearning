@@ -46,7 +46,7 @@ def read_lines(filename):
 
 
 def construct_dictionary() -> int:
-    for filename in find_files('09-data/names/*.txt'):
+    for filename in find_files('data/names/*.txt'):
         type_name = os.path.splitext(os.path.basename(filename))[0]
         all_categories.append(type_name)
         lines = read_lines(filename)
